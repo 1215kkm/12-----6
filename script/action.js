@@ -54,3 +54,9 @@ $('.mo_icons').html($('.icons').html());
 $('.hamburger').click(function(){
     $('.mo_wrap').show()
 })
+$('.mo_wrap').click(function(){
+    $(this).hide();
+});
+$('.mo_nav, .mo_icons').click(function(e){
+    e.stopPropagation(); //이벤트 전파 차단
+})

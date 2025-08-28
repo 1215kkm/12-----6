@@ -30,7 +30,7 @@ header .pc_nav .gnb li a {
   font-size: 2rem;
   padding: 1.9vw 2.6vw;
   display: block;
-  border: 1px solid #000;
+  
 }
 header .icons {
   display: flex;
@@ -176,12 +176,12 @@ header .icons a:first-child {
 
 .section1 .centerbox {
   display: flex;
-  border: 1px solid red;
+  
   align-items: start;
 }
 .section1 .centerbox .textbox {
   width: 230px;
-  border: 1px solid #000;
+  
   flex-shrink: 0;
   position: relative;
 }
@@ -197,7 +197,7 @@ header .icons a:first-child {
 }
 .section1 .centerbox .part1_slidebox {
   width: calc(100% - 230px + (100vw - 100%) / 2);
-  border: 1px solid blue;
+  
   flex-shrink: 0;
 }
 .section1 .centerbox .part1_slidebox .text {
@@ -231,7 +231,7 @@ header .icons a:first-child {
 .section2 .content_box .textbox {
   width: 40%;
   text-align: center;
-  border: 1px solid #000;
+  
 }
 .section2 .content_box .textbox strong {
   font-size: 4rem;
@@ -251,11 +251,11 @@ header .icons a:first-child {
   flex-wrap: wrap;
   justify-content: end;
   gap: 4rem;
-  border: 1px solid #000;
+  
 }
 .section2 .content_box .collection li {
   width: 40%;
-  border: 1px solid #000;
+  
 }
 .section2 .content_box .collection li:first-child {
   position: relative;
@@ -450,6 +450,8 @@ header .icons a:first-child {
   z-index: -1;
 }/*# sourceMappingURL=main.css.map */
 
+footer {background: #333; height: 150px;}
+
 
 /* 태블릿 */
 @media screen and (max-width:1200px) {
@@ -476,11 +478,21 @@ header .icons a:first-child {
   .mo_navbox .mo_nav .gnb li {font-size: 18px; text-align: center; border-bottom: 1px solid #ddd;}
   .mo_navbox .mo_nav .gnb li a {padding: 30px 0; display: block;}
 
-  .hamburger {border: 1px solid #000; position: absolute; width: 40px; height: 40px; left: 20px; top: 10px; }
+  .hamburger { position: absolute; width: 40px; height: 40px; left: 20px; top: 10px; }
   .hamburger span {position: absolute; width: 20px; height: 2px; background: #000; left: 50%; top: 50%; transform: translate(-50%,-50%); border-radius: 2px;}
   .hamburger span:before,
   .hamburger span:after {content: ""; position: absolute; height: 100%; background: #000; width: 100%; border-radius: 2px}
 
   .hamburger span:before {width: 70%; top: -7px;}
   .hamburger span:after {width: 40%; top: 7px;}
+
+  .section2 .content_box {flex-direction: column;}
+  .section2 .content_box .textbox {width: auto; margin-top: 4rem;}
+  .section2 .content_box .textbox p {margin-bottom: 5rem;}
+  .section3 {flex-direction: column; }
+  .section3 .left_cont {width: auto;}
+  .section3 .right_cont {width: auto; margin-top: 4rem;}
+  .section3 .left_cont .slide_img {right: auto; left: 50%; transform: translate(-50%,-50%); width: 80%;}
+  .section3 .right_cont .textbox {width: auto;padding: 0 50px}
+  .section4 .content {flex-direction: column;}
 }
